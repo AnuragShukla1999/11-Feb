@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #7970f4d0;
+    padding: 40px 30px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.container input{
+    font-size: 1rem;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+#list li{
+    font-size: 2rem;
+    color: rgb(255, 224, 230);
+    list-style: none;
+}
+
+#btn{
+    padding:  6px 18px;
+    border: none;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: #eb2300c3;
+    color: #fff;
+    font-weight: 700;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" name="display" id="display">
+            <div>
+            <button value="C" onclick="clearScreen()" class="pin1" id="btn">AC</button>
+            <!-- <button value="" onclick="cal('')" class="pin2">DEL</button> -->
+            <button value="%" onclick="cal('%')" class="pin3">%</button>
+            <button value="/" onclick="cal('/')" class="pin4">/</button>
+        </div>
+        <div>
+            <button value="7" onclick="cal('7')">7</button>
+            <button value="8" onclick="cal('8')">8</button>
+            <button value="7" onclick="cal('9')">9</button>
+            <button value="*" onclick="cal('*')" class="pins4">*</button>
+        </div>
+        <div>
+            <button value="4" onclick="cal('4')">4</button>
+            <button value="5" onclick="cal('5')">5</button>
+            <button value="6" onclick="cal('6')">6</button>
+            <button value="-" onclick="cal('-')" class="pins3">-</button>
+        </div>
+        <div>
+            <button value="1" onclick="cal('1')">1</button>
+            <button value="2" onclick="cal('2')">2</button>
+            <button value="3" onclick="cal('3')">3</button>
+            <button value="+" onclick="cal('+')" class="pins2">+</button>
+        </div>
+        <div>
+            <button value="00" onclick="cal('00')">00</button>
+            <button value="0" onclick="cal('0')">0</button>
+            <button value="." onclick="cal('.')">.</button>
+            <button value="=" onclick="calculate()" class="pins">=</button>
+        </div>
+    
+        </div>
+    <script src="./script.js"></script>
+</body>
+</html>

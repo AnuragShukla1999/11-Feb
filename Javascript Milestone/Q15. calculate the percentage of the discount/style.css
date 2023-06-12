@@ -1,0 +1,110 @@
+/* Sono font  */
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono', sans-serif;
+}
+
+body{
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	gap: 20px;
+	background-color: #2537099d;
+}
+
+header > h1{
+	color: rgb(27, 26, 23);
+	text-align: center;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+#in-screen{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.input > label{
+	color: rgb(91, 1, 1);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.input > input{
+	width: 70px;
+	padding: 8px 16px;
+	background-color: transparent;
+	border: 3px solid white;
+	color: gold;
+	font-size: 18px;
+	text-align: center;
+}
+
+#btn-screen > button{
+	padding: 12px 24px;
+	background-color: transparent;
+	border: 3px solid rgb(10, 40, 14);
+	border-radius: 20px;
+	color: rgb(27, 26, 26);
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#btn-screen > button:hover{
+	transform: scale(1.05);
+}
+
+#op-screen{
+	padding: 20px 20px 0px 20px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(255, 255, 255, 0.1);
+	border-radius: 30px;
+	box-shadow: 2px 2px 2px white , -2px -2px 2px white;
+}
+
+#op-screen > p{
+	display: flex;
+	align-items: center;
+	color: white;
+	font-size: 22px;
+}
+
+#op-screen > p > span{
+	color: gold;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+#op-screen > p > span:first-child , #op-screen > p > span:last-child{
+	font-size: 40px;
+}
+
+/* removing incresing & decreasing button from input[type = number] */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+/* for all input tag we removed ouline when input tag will focus */
+input:focus{
+	outline: none;
+}
