@@ -8,4 +8,4 @@ function reverseString(st) {
 let input = "Hello";
 setTimeout(() => {
     console.log(reverseString(input));
-})
+}, 2000)
